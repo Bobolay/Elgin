@@ -247,6 +247,33 @@
     .regular
       color: $grey
       margin-bottom: 15px
+    table
+      width: 100%
+      border-top: 1px solid #bcbcbc
+      border-bottom: 1px solid #bcbcbc
+      tr
+        &:nth-child(even)
+          background-color: rgba(188,188,188,0.17)
+      td
+        padding: 5px 10px
+        font-size: 14px
+        @media #{$small-only}
+          padding: 10px
+          line-height: 14px
+    // unordered
+    ul
+      padding-left: 40px
+      margin: 10px 0
+      font-size: 14px
+      font-style: italic
+    // ordered
+    ol
+      padding-left: 37px
+      li
+        padding-left: 5px
+        margin: 10px 0
+
+
   .section-header
     font-size: 1.625em
     color: $dark-grey
